@@ -1,0 +1,38 @@
+/* For styling the rendered Markdown */
+
+
+h1:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: lightslategrey;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  border-bottom: none;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h1:first-of-type:before {
+  content: none;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  h1 {
+      color: lightskyblue;
+  }
+
+  h2 {
+      color: mediumslateblue;
+  }
+
+  h3 {
+      color: darkslateblue;
+  }
+}
+
+
